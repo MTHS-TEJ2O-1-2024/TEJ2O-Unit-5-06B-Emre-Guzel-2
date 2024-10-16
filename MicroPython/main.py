@@ -1,10 +1,19 @@
 """
-Created by: Mr. Coxall
-Created on: Sep 2020
-This module is a Micro:bit MicroPython program
+Created by: Emre Guzel
+Created on: Oct 16 2024
+This module is a Micro:bit MicroPython program claculates the distance 
 """
 
 from microbit import *
 
 
-display.scroll("Hello, World!")
+# Idenfiyng the sonar class and asingning the sonor
+class HCSR04:
+    def __init__(self ,tpin = pin1, epin ):
+        
+    display.show(Image.HAPPY)
+
+    while True():
+    # Finding the distance
+        if button_a.is_pressed():
+            display.clear()
