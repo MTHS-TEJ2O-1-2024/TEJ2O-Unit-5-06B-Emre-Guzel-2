@@ -9,8 +9,7 @@ from microbit import *
 
 # Idenfiyng the sonar class and asingning the sonor
 class HCSR04:
-    def __init__(self ,tpin = pin1, epin ):
-        
+    sonar = HCSR04()
     display.show(Image.HAPPY)
 
     while True():
