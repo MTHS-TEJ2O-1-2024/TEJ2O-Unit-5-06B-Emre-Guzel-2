@@ -5,14 +5,13 @@ This module is a Micro:bit MicroPython program claculates the distance
 """
 
 from microbit import *
+#class HCSR04:
+sonar = HCSR04()
 
+# Dfeinding the distance
+distance_TO_Object = 0
+display.show(Image.HAPPY)
 
-# Idenfiyng the sonar class and asingning the sonor
-class HCSR04:
-    sonar = HCSR04()
-    display.show(Image.HAPPY)
-
-    while True():
-    # Finding the distance
-        if button_a.is_pressed():
-            display.clear()
+if button_a.is_pressed():
+    display.clear()
+    distance_TO_Object = sonar.ping
