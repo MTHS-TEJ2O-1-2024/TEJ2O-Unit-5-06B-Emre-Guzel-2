@@ -62,6 +62,6 @@ while True:
     if button_a.is_pressed():
         display.clear()
         distance_TO_Object = sonar.distance_mm()
-        #to find cm value, you need to divide mm value to 10
-        display.show(int(sonar.distance_mm()/10))
+        # to find cm value, you need to divide mm value to 10
+        display.show(int(sonar.distance_mm() / 10))
         sleep(500)
